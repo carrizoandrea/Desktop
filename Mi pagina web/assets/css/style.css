@@ -32,7 +32,10 @@ nav{
     padding-left: 20px;
 }
 
-
+.nav-link{
+    font-size: 25px;
+    color:#000000;
+}
 nav ul li a{
     text-decoration: none;
     color: #331317;
@@ -412,18 +415,9 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 /* Página SobreMi.html*/
 
-.bodyBio{
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    grid-template-rows: 80px  1fr  1fr  80px;
-    grid-template-areas:  "nav           nav"
-                          "header        header"
-                          "main          aside"
-                          "footer        footer" 
-}
+
 
 .headerBio{
-    grid-area: header;
     width: 100%;
     height: 100%;
     display: flex;
@@ -446,62 +440,59 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .headerBio div h1{
-    margin-top: 10px;
+    height: 40%;
+    margin-top: 40px;
     color: #8f113c;
 }
 
 .headerBio div p{
-    margin: 20px;
+    height: 60%;
+    margin-bottom: 30px;
 }
 
-.asideBio{
-    grid-area: aside;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-}
+
 
 .mainBio{
-    grid-area: main;
+    background-image: url(../img/2-min.png);
     width: 100%;
+    height: 400px;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
 }
 
-.mainBio div{
+div .portfolio{
     background-color: #fcd1df;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: star;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
     border-radius: 20px;
+    margin: 20px;
+    height: auto;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
-.mainBio div h2{
-    font-family: cursive;
+.potfolio h2{
     font-size: 40px;
     color: #8f133c;
 }
 
 .mainBio div p{
-    font-family: cursive;
     font-size: 20px;
-    padding-bottom: 30px;
+    padding: 5px;
 }
 
-.mainBio__btn{
+.portfolio div{
     border: 1px #8f113c;
     border-radius: 20px;
 }
 
 .mainBio div a{
-    font-family: calibri;
     font-size: 20px;
     text-decoration: none;
     color:#0e0d0d;
@@ -523,18 +514,17 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 }
 
-.texto{
-    font-family: cursive;
-    font-size: 20px;
-    color:#000;
-    width: 550px;
-    height: 350px;
-    padding: 25px;
+.display-3{
+    text-align: center;
 }
 
-.imgContacto{
-    width: 100%;
-    height: 100%;
+.lead{
+    font-size: 20px;
+    color:#000;
+    width: 90%;
+    height: 60%;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -543,56 +533,64 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 /* Página Contáctame.html*/
 
 .bodyContacto{
-    background-color: #e9c6d2;
-    display: grid;
-    grid-template-columns: 1fr   1fr;
-    grid-template-rows: 80px   1fr  1fr 80px;
-    grid-template-areas: "nav    nav"
-                         "aside  header"
-                         "aside  main"
-                         "footer  footer"; 
+    background-image: url(../img/fondoconlogo.png);
+     
 }
 
-.asideContacto{
-    grid-area: aside;
-}
 
-.asideContacto img{
+.headerContacto div{
     width: 100%;
-    height: 100%;
-}
-
-.headerContacto{
-    grid-area: header;
-    width: 100%;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tituloAsesoria{
-    font-family: cursive;
-    font-size: 35px;
+.tituloServicios{
+    padding-top: 60px;
+    height: 150px;
+    font-size: 65px;
+}
+
+.display-4{
     color: #8f113c;
     text-align: center;
+    margin: 40px;
 }
 
 .textoAsesoria{
     font-family: calibri;
-    font-size: 18px;
-    background-color: #e6e1e1;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    margin: 20px;
+    font-size: 25px;
+    border: 3px #570606;
+    border-radius: 10px;
+    width: 80%;
+    height: 350px;
+    margin: 30px;
     padding: 15px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
+}
+
+.headerContacto div a{
+    background-color: #d6f4f8;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0e0d0d;
+    font-size: 40px;
+    font-weight: bold;
+    height: 80px;
+    width: 60%;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .mainContacto{
     grid-area: main;
     width: 100%;
-    height: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,16 +598,15 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .tituloContacto{
-    font-family: cursive;
-    font-size: 40px;
-    color:#8f133c;
+    font-size: 60px;
+    color:#13090c;
 }
 
 .redes{
-    background-color:#e6e1e1;
-    width: 350px;
-    height: 100px;
-    border-color: #070707;
+    background-color:#c0aeb2;
+    width: 450px;
+    height: 150px;
+    border-color:3px #070707;
     border-radius: 10px;
     display:flex;
     justify-content: center;
@@ -628,8 +625,27 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     padding-left: 30px;
 }
 
-/* Aquí comeinzan los media quieries*/
+/* Aquí comienzan los media quieries*/
+
+@media(max-width:1200px){
+    .headerBio{
+        height: 550px;
+    }
+}
+
 @media(max-width:992px){
+
+    .headerBio{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-fluid{
+        width: 100%;
+        height: 300px;
+    }
 
     .tarjetasBlog{
         padding-bottom: 20px;
@@ -640,6 +656,20 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
         padding-bottom: 20px;
     }
 }
+
+
+@media(min-width:992px){
+
+    .mainBio{
+        height: 550px;
+    }
+
+    .img-fluid{
+        height: 500px;
+        width: 500px;
+    }
+}
+
 
 @media(max-width:768px){
     .mainRegistro div form div{
@@ -670,6 +700,13 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
         width: 550px;
     }
 
+    .mainBio{
+        height: auto;
+    }
+    .img-fluid{
+        height: 500px;
+    }
+
 }
 
 @media(max-width:576px){
@@ -688,6 +725,9 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     .enviar{
         width: 300px;
     }
+    
+
+
 }
 
 
