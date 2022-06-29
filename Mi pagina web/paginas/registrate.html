@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,44 +10,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="container-fluid m-0 p-0 bodyResgistro">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid d-flex justify-content-between">
-            <div class="navbar">
-                <img class="navbar__logo" src="../assets/img/logo (1).png" alt="andymarketing">
-                <h4 class="navbar__nombre">Andy Marketing</h4>
+<body class="bodyResgistro">
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="navbar">
+                    <img class="navbar__logo" src="../assets/img/logo (1).png" alt="andymarketing">
+                    <h4 class="navbar__nombre">Andy Marketing</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav navbar__ul">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./registrate.html">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobremi.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactame.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav navbar__ul">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./registrate.html">Registrate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./sobremi.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactame.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>>
-    </nav>
-    <header class="headerRegistro">
+        </nav>    
+    </div>
+    <header class=" container-fluid headerRegistro">
         <div class="row align-items-center justify-content-center">
             <h1 class="display-1 col-sm-12  col-12 w-75 text-align-center">Registrate aquí</h1>
             <p class="lead col-12 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </header>
-    <main class="mainRegistro">
+    <main class="container-fluid mainRegistro">
         <div>
             <form action="form">
                 <div>
@@ -60,7 +63,7 @@
             </form>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="container-fluid footer">
         <h4 class="footer__copy">Copyright - 2022 by Carrizo Andrea - Todos los derechos reservados</h4>
         <a class="footer__logoIg" href="https://instagram.com/andy7.cm"><img src="../assets/img/instagram (1).png" alt="andy7.cm"></a>
         <a class="footer__logoFb" href="https://fascebook.com/AndreaCarrizo-CM"><img src="../assets/img/facebook (1).png" alt="andreacarrizo-cm"></a>
